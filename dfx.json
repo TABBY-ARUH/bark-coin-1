@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "barkcoin_backend": {
+      "main": "src/barkcoin_backend/main.mo",
+      "type": "motoko"
+    },
+    "barkcoin_frontend": {
+      "dependencies": [
+        "barkcoin_backend"
+      ],
+      "source": [
+        "src/barkcoin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "barkcoin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
